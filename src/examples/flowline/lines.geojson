@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "hjklwjfklaejf",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "length": 2676.8743258357663, "straightdis": 2311.6759875442472, "sinuosity": 1.1579798986792602 }, "geometry": { "type": "LineString", "coordinates": [ [ 107.001931604349352, 33.045875420137754 ], [ 106.999551017329338, 33.041998383776452 ], [ 106.998081855054124, 33.039181723871678 ], [ 106.995034703668523, 33.037676427402509 ], [ 106.986600623940504, 33.038406271326927 ], [ 106.983512662491734, 33.037836081277618 ] ] } },
+{ "type": "Feature", "properties": { "length": 1003.6733389523848, "straightdis": 1003.6733389523848, "sinuosity": 1.0 }, "geometry": { "type": "LineString", "coordinates": [ [ 106.998204285243787, 33.048030522431766 ], [ 107.00629828111181, 33.044700924199937 ] ] } },
+{ "type": "Feature", "properties": { "length": 1271.3062187595096, "straightdis": 1271.3062187595096, "sinuosity": 1.0 }, "geometry": { "type": "LineString", "coordinates": [ [ 106.995633251262177, 33.045236861182346 ], [ 107.006026214023805, 33.041268569611738 ] ] } }
+]
+}
