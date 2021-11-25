@@ -11,7 +11,6 @@ class PolylineFlowMaterialProperty {
    * @param {Color} [options.color=Cesium.Color.RED] 颜色
    * @param {Number} [options.duration=1000] 动画的周期，值越小动画越快，单位毫秒
    * @param {Number} [options.imageHorizontalLength] 图片水平方向的实际长度
-   * @param {Number} [options.lineHorizonlLength] 线条水平方向的实际长度
    * @param {String|Resource} [options.image] 需要映射到材质的图片
    *
    * @see PolylineTrailLinkMaterialProperty
@@ -26,7 +25,6 @@ class PolylineFlowMaterialProperty {
       options.imageHorizontalLength,
       1024
     );
-    this._lineHorizonlLength = defaultValue(options.lineHorizonlLength, 1024);
     this._definitionChanged = new Event();
   }
 
@@ -60,15 +58,6 @@ class PolylineFlowMaterialProperty {
   }
   set imageHorizontalLength(v) {
     this._imageHorizontalLength = v;
-  }
-  /**
-   * 线条水平方向长度
-   */
-  get lineHorizonlLength() {
-    return this._lineHorizonlLength;
-  }
-  set lineHorizonlLength(v) {
-    this._lineHorizonlLength = v;
   }
   /**
    * 材质发生变化时触发的事件
@@ -116,7 +105,6 @@ class PolylineFlowMaterialProperty {
     result.color = this._color;
     result.image = this.image;
     result.imageHorizontalLength = this._imageHorizontalLength;
-    result.lineHorizonlLength = this._lineHorizonlLength;
     result.phaseOffset = this._phaseOffset = (Date.now() / this._duration) % 1;
     return result;
   }
@@ -132,8 +120,7 @@ class PolylineFlowMaterialProperty {
       (other instanceof PolylineFlowMaterialProperty &&
         this.color === other.color &&
         this.image === other.image &&
-        this._imageHorizontalLength === other._imageHorizontalLength &&
-        this._lineHorizonlLength === other._lineHorizonlLength)
+        this._imageHorizontalLength === other._imageHorizontalLength)
     );
   }
 }

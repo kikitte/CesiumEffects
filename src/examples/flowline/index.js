@@ -19,9 +19,9 @@ export default function load(viewer) {
 
       entity.polyline.material = new FlowLineMaterial.MaterialProperty({
         color: Cesium.Color.CORNFLOWERBLUE,
-        imageHorizontalLength: 256,
+        imageHorizontalLength: 512,
         lineHorizonlLength: lineLength,
-        duration: 6000,
+        duration: 20000,
       });
     });
 
